@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Bank-ai</title>
+  </head>
+  <body class="bg-black">
+    <!--Navbar-->
+    <header>
+      <nav class="relative container mx-auto p-3 bg-black">
+        <!--Container-->
+        <div class="flex items-center justify-between">
+          <div class="pt-2">
+            <h3 class="text-white text-3xl font-bold">Bank-ai</h3>
+          </div>
+
+          <div class="hidden text-white m-2 md:flex space-x-6">
+            <a href="#" class="hover:text-purple-800">Home</a>
+            <a href="#balance" class="hover:text-purple-800">Balance</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Balance Section-->
+    <section>
+      <div class="container flex flex-col">
+        <div class="table-row">
+          <div class="col"></div>
+        </div>
+        <div class="p-6 mt-6 flex flex-col">
+          <label class="text-white text-lg text-center font-bold outline-none"
+            >Amount</label
+          >
+          <input
+            type="text"
+            value=""
+            class="ml-4 p-2 mt-2 rounded-lg text-lg"
+          />
+        </div>
+        <div class="px-16 space-x-2">
+          <button class="bg-green-500 rounded-md p-2 hover:bg-green-900">
+            Deposit
+          </button>
+          <button
+            class="bg-purple-900 text-white rounded-md p-2 hover:bg-purple-500"
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Table Section-->
+    <section class="p-6 mt-12">
+      <div class="">
+        <table class="text-white font-serif">
+          <thead>
+            <tr>
+              <th><i>Date</i></th>
+              <th><i>Transaction Code</i></th>
+              <th><i>Amount</i></th>
+              <th><i>Type</i></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
