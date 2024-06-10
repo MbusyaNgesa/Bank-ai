@@ -8,3 +8,8 @@ th {
   padding-left: 30px;
   padding-right: 40px;
 }
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
